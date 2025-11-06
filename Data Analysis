@@ -1,0 +1,91 @@
+🐶 Data Wrangling and Analysis Project – WeRateDogs
+## 🧠 Overview
+
+- This project focuses on data gathering, assessment, cleaning, and analysis using the WeRateDogs Twitter dataset.
+- The goal is to wrangle data from multiple sources, assess its quality and tidiness, clean it programmatically, and perform meaningful analysis and visualizations to derive insights.
+- This project demonstrates the data wrangling process as part of a data analysis workflow, integrating manual inspection, Python-based cleaning, and automated data merging.
+
+🗂️ Project Structure
+Project_final/
+├── wrangle_act.ipynb          # Main Jupyter notebook for data wrangling and analysis
+├── twitter_archive_enhanced.csv  # Original Twitter data
+├── image_predictions.tsv      # Image prediction results from a pre-trained model
+├── tweet_json-copy.txt        # Additional tweet data in JSON format
+├── twitter_archive_master.csv # Final cleaned and combined dataset
+├── wrangle_report.pdf         # Report summarizing the wrangling process
+└── act_report.pdf             # Final report showing key findings and insights
+
+⚙️ Requirements
+
+You’ll need Python 3.8+ and the following packages:
+
+pip install pandas numpy matplotlib seaborn requests tweepy
+
+
+If you’re using Jupyter Notebook:
+
+pip install jupyterlab
+
+🚀 How to Run the Project
+
+Open the Jupyter notebook:
+
+jupyter notebook wrangle_act.ipynb
+
+
+Follow the workflow inside the notebook:
+
+Gather data: Import the datasets (twitter_archive_enhanced.csv, image_predictions.tsv, and tweet_json-copy.txt).
+
+Assess data: Identify quality and tidiness issues.
+
+Clean data: Apply programmatic cleaning using Pandas.
+
+Store cleaned data: Export the cleaned dataset as twitter_archive_master.csv.
+
+Analyze and visualize: Explore patterns and create summary statistics and charts.
+
+📈 Key Steps in the Project
+
+Data Gathering
+
+Loaded three datasets from different sources and formats (CSV, TSV, JSON).
+
+Data Assessment
+
+Detected quality issues (missing data, inconsistent names, invalid ratings).
+
+Identified tidiness issues (dog stages spread across multiple columns).
+
+Data Cleaning
+
+Fixed column names, removed duplicates, standardized formats.
+
+Merged datasets into one clean master file.
+
+Analysis and Visualization
+
+Explored tweet popularity, dog ratings, and image prediction results.
+
+Visualized trends in ratings, retweets, and favorites.
+
+🧩 Outputs
+
+twitter_archive_master.csv → Final cleaned and combined dataset.
+
+wrangle_report.pdf → Describes wrangling steps and data cleaning logic.
+
+act_report.pdf → Summarizes findings with charts and analysis.
+
+📊 Example Insights
+
+The most common dog ratings are above 10/10 (WeRateDogs’ humorous rating style).
+
+Tweets with images of dogs generally have higher engagement (favorites and retweets).
+
+Certain breeds (as predicted by the image classifier) receive more attention on social media.
+
+👨‍💻 Author
+
+Omar Mohamed
+Data Wrangling and Analysis Project – 2025
